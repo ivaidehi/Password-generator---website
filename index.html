@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>password generator</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu+Condensed&display=swap"
+         rel="stylesheet" />
+      <style>
+         body {
+            background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/84366486/original/c490739223326be0ddccbf3bd1d7381ce7926fa5/do-stunning-background-videos-for-your-website.png');
+            background-size: 1700px 850px;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.47);
+         }
+
+         #cardBack {
+            display: flex;
+            justify-content: center;
+            color: aliceblue;
+         }
+
+         #card {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            border: solid aliceblue;
+            border-radius: 8px;
+            padding: 40px;
+            color: aliceblue;
+            font-family: 'Poppins';
+         }
+
+         span {
+            background-color: rgb(255, 251, 0);
+            border: solid 2px rgb(255, 251, 0);
+            border-radius: 6px;
+            padding: 5px;
+            color: black;
+         } 
+
+         button {
+            width: 280px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: rgba(255, 222, 4, 0.9);
+            font-weight: bolder;
+         }
+         #cardBack p{
+            position: absolute;
+            top: 670px;
+            font-size: x-small;
+         } 
+      </style>
+   </head>
+
+   <body>
+      <div id="cardBack">
+         <div id="card">
+
+            <label style="font-size: x-large;">PASSWORD</label>
+
+            <br>
+            <span style="font-weight: bolder;" id="password"></span>
+            <br>
+            <img style="width: 200px;" src="pw.png" alt="">
+            <br>
+
+            <div>
+               <input id="ul" type="checkbox">
+               <label>Uppercase letters</label>
+
+               <input id="ll" type="checkbox">
+               <label>Lowercase letters</label>
+
+               <input id="n" type="checkbox">
+               <label>Numbers</label>
+
+               <input id="sy" type="checkbox">
+               <label>Symbols</label>
+
+            </div>
+            <br>
+
+            <button id="generatePwBtn">Generate</button>
+
+            <br>
+            <div>Note : The length of password is 8 by default.</div>
+         </div>
+         <p>
+            &copy; Copyrights 2022.PASSWORD GENERATOR. All rights reserved.
+         </p>
+      </div>
+      <script src="script.js"></script>
+   </body>
+
+</html>
